@@ -1,0 +1,44 @@
+﻿<Application x:Class="SchoolLanguage.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SchoolLanguage"
+             StartupUri="\Windows\AuthorizationWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="mainColor" Color="White"></SolidColorBrush>
+        <SolidColorBrush x:Key="additionalColor" Color="#FFE7FABF"></SolidColorBrush>
+        <SolidColorBrush x:Key="accentColor" Color="#FF04A0FF"></SolidColorBrush>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="30px"></Setter>
+            <Setter Property="Width" Value="150px"></Setter>
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>            
+        </Style>
+        <Style TargetType="PasswordBox">
+            <Setter Property="Height" Value="30px"></Setter>
+            <Setter Property="Width" Value="150px"></Setter>
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="30px"></Setter>
+            <Setter Property="Width" Value="120px"></Setter>
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="Background" Value="{StaticResource accentColor}"></Setter>
+            <Setter Property="Foreground" Value="{StaticResource mainColor}"></Setter>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Height" Value="30px"></Setter>
+            <Setter Property="Width" Value="100px"></Setter>
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>
